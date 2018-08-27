@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<h1>Aniversariantes</h1>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Nome</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Aniversariantes.Rows) {
+
+        <tr>
+            <td>@item["Nome"]</td>
+        </tr>
+    }
+</table>
+
